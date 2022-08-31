@@ -1,0 +1,38 @@
+.header{
+    background: #131521;
+    height: 70px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    &-wrapper{
+
+    }
+    &__row{
+
+    }
+    
+    &__columns{
+        
+}
+    &__items{
+        display: flex;
+        align-items: center;
+        padding: 15px 0 0 0;
+    }
+    &__links{
+        display: flex;
+        padding: 0 30px 0 235px;
+        
+        
+    }
+    &__link{
+        color:#9398B2;
+        text-decoration: none;
+        margin: 0 15px;
+        transition: all 0.3s ease;
+        &:hover{
+            color: #bfc6e7;
+        }
+    }
+}
+
