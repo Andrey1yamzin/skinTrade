@@ -13,9 +13,71 @@
         
     }
     &__main{
-    
+    display: flex;
+    padding-top: 140px;
     }
     &__item{
-
+        position: relative;
+        
+        .title__main{
+            font-size: 50px;
+            text-transform: uppercase;
+            line-height: 58px;
+            max-width: 500px;
+            margin: 0 0 30px 0;
+            
+        }
+        .main__image{
+            position: absolute;
+            width: 830px;
+            top: -200px;
+            left: -130px;
+            img{
+                width: 100%;
+            }
+        }
+        .main-button{
+            background: #6E00DC;
+            border-radius: 50px;
+            width: 253px;
+            height: 60px;
+            position: relative;
+            cursor: pointer;
+            
+            .button__text{
+                font-size: 15px;
+                position: absolute;
+                width: 144px;
+                top: 16px;
+                left: 30px;
+            }
+            .right{
+                visibility: hidden;
+                width: 24px;
+                height: 24px;
+                background: url(../icons/arrow-long-right.svg) 50% 50%/ cover no-repeat;
+                position: absolute;
+                top: 0px;
+                right: -40px;
+                
+                
+            }
+            
+            }
+            .main-button:hover{
+                .right{
+                    visibility: visible;
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    background: url(../icons/arrow-long-right.svg) 50% 50%/ cover no-repeat;
+                    position: absolute;
+                    top: 0px;
+                    right: -50px;
+                    transition: all 0.3s ease-in;
+                    
+                }
+        }
+        
     }
 }
