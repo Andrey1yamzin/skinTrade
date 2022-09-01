@@ -1,0 +1,21 @@
+.content{
+    flex: 1 1 auto;
+    &__background{
+        height: 1000px;
+        background: url(../img/background.png)50% 50% /cover no-repeat;
+    }
+    &-wrapper{
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    &__main-wrapper{
+        
+    }
+    &__main{
+    
+    }
+    &__item{
+
+    }
+}

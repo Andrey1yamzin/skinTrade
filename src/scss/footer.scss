@@ -1,0 +1,10 @@
+.footer{
+    min-height: 320px;
+    background: #080C13;
+    flex: 0 0 auto;
+    &-wrapper{
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+}
