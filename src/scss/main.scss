@@ -1,24 +1,16 @@
-.content{
-    flex: 1 1 auto;
-    &__background{
-        height: 1000px;
-        background: url(../img/background.png)50% 50% /cover no-repeat;
-    }
-    &-wrapper{
+.main{
+    background: url(../img/background.png)0% 12% /cover no-repeat;
+    height: 600px;
+    &__wrapper{
         max-width: 1280px;
         margin: 0 auto;
         padding: 0 30px;
+        display: flex;
+        padding-top: 140px;
+        height: 500px;
     }
-    &__main-wrapper{
-        
-    }
-    &__main{
-    display: flex;
-    padding-top: 140px;
-    }
-    &__item{
+    .main__item{
         position: relative;
-        
         .title__main{
             font-size: 50px;
             text-transform: uppercase;
@@ -32,12 +24,14 @@
             width: 830px;
             top: -200px;
             left: -130px;
+            z-index: 1;
             img{
                 width: 100%;
             }
         }
-        .main-button{
+        .main__button{
             background: #6E00DC;
+            border: none;
             border-radius: 50px;
             width: 253px;
             height: 60px;
@@ -48,7 +42,7 @@
                 font-size: 15px;
                 position: absolute;
                 width: 144px;
-                top: 16px;
+                top: 18px;
                 left: 30px;
             }
             .right{
@@ -64,7 +58,7 @@
             }
             
             }
-            .main-button:hover{
+            .main__button:hover{
                 .right{
                     visibility: visible;
                     display: block;
