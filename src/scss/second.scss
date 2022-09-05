@@ -1,6 +1,11 @@
 .second{
     background: #090D14;
     padding: 60px 0 30px 0;
+    &__wrapper{
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
     &__line{
         margin: 0px 0 50px 0;
     }
@@ -43,7 +48,7 @@
         }
         .info-image{
             top: -100px;
-            left: 90px;
+            left: -127px;
         }
         .info__text-wrapper{
             margin: 0 0 0 100px;
@@ -51,7 +56,7 @@
     }
     .down{
         .info__item{
-            align-items: flex-end;
+            align-items: center;
         }
         .info-title{
             margin: 0 0 24px 0;
@@ -62,10 +67,10 @@
         }
         .info-image{
             top: -100px;
-            right: 100px;
+            right: -75px;
         }
         .info__text-wrapper{
-            margin: 0 50px 0 0;
+            margin: 0 0px 0 30px;
             padding: 0 30px 0 0;
         }
     }
