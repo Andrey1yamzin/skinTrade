@@ -2,13 +2,55 @@
 @import "header.scss";
 @import "main.scss";
 @import "second.scss";
-@import "footer.scss";
 @import "faq.scss";
+@import "content.scss";
+@import "footer.scss";
 .wrapper{
 height: 100%;
 display: flex;
 flex-direction: column;
 position: relative;
+}
+.button{
+    background: #6E00DC;
+    border: none;
+    border-radius: 50px;
+    width: 253px;
+    height: 60px;
+    position: relative;
+    cursor: pointer;
+    .button__text{
+        font-size: 15px;
+        position: absolute;
+        width: 144px;
+        top: 18px;
+        left: 30px;
+    }
+    .right{
+        visibility: hidden;
+        width: 24px;
+        height: 24px;
+        background: url(../icons/arrow-long-right.svg) 50% 50%/ cover no-repeat;
+        position: absolute;
+        top: 0px;
+        right: -40px;
+        
+        
+    }
+}
+.button:hover{
+    .right{
+        visibility: visible;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url(../icons/arrow-long-right.svg) 50% 50%/ cover no-repeat;
+        position: absolute;
+        top: 0px;
+        right: -50px;
+        transition: all 0.3s ease-in;
+        
+    }
 }
 .title{
     font-family: 'Roboto', sans-serif;
@@ -25,5 +67,14 @@ position: relative;
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, rgba(81, 73, 122, 0) 0%, rgba(33, 36, 55, 0.63) 49%, rgba(33, 36, 55, 0) 100%);
+}
+.links{
+    color:#9398B2;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    &:hover{
+        color: #bfc6e7;
+    }
 }
 // сделать отимизацию для 1900px!

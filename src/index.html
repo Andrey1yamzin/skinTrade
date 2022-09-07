@@ -18,12 +18,12 @@
                             <div class="header-item"><img src="icons/logo.svg" alt=""></div>
                             <div class="header-item">
                                 <nav class="header__links">
-                                    <a href="#" class="header__link">Как это работает</a>
-                                    <a href="#" class="header__link">Купить скины</a>
-                                    <a href="#" class="header__link">Бонус</a>
-                                    <a href="#" class="header__link">FAQ</a>
-                                    <a href="#" class="header__link">Блог</a>
-                                    <a href="#" class="header__link">Партнерская программа</a>
+                                    <a href="#" class="header__link links">Как это работает</a>
+                                    <a href="#" class="header__link links">Купить скины</a>
+                                    <a href="#" class="header__link links">Бонус</a>
+                                    <a href="#" class="header__link links">FAQ</a>
+                                    <a href="#" class="header__link links">Блог</a>
+                                    <a href="#" class="header__link links">Партнерская программа</a>
                                 </nav>
                             </div>
                             <div class="header-item"><img src="img/lang.png" alt=""></div>
@@ -36,7 +36,7 @@
             <div class="main__wrapper">
                             <div class="main__item">
                                 <span class="title title__main">Самая выгодная продажа скинов Dota2</span>
-                                <button class="main__button"><span class="text button__text">Перейти к продаже <div class="right"></div></span></button>
+                                <button class="main__button button"><span class="text button__text">Перейти к продаже <div class="right"></div></span></button>
                             </div>
                             <div class="main__item">
                                 <div class="main__image">
@@ -84,10 +84,10 @@
 
                     <div class="faq__btns-wrapper">
                         <div class="faq__btns">
-                            <button class="faq__btn faq__btn-active"><div class="text"> Я вывел вещь, в стиме она стоит дешевле!</div></button>
-                            <button class="faq__btn faq__btn-deactive"><div class="text">Почему мои вещи проданы, хотя я их не продавал?</div></button>
-                            <button class="faq__btn faq__btn-deactive"><div class="text">Как купить выгодное предложение?</div></button>
-                            <button class="faq__btn faq__btn-deactive"><div class="text">Я не нашел интересующего меня вопроса</div></button>
+                            <button class="faq__btn faq__btn-active"><div class="text"> Я вывел вещь, в стиме она стоит дешевле!</div><div class="tab-pointer"><span></span><span></span></div></button>
+                            <button class="faq__btn faq__btn-deactive"><div class="text">Почему мои вещи проданы, хотя я их не продавал?</div><div class="tab-pointer"><span></span><span></span></div></button>
+                            <button class="faq__btn faq__btn-deactive"><div class="text">Как купить выгодное предложение?</div><div class="tab-pointer"><span></span><span></span></div></button>
+                            <button class="faq__btn faq__btn-deactive"><div class="text">Я не нашел интересующего меня вопроса</div><div class="tab-pointer"><span></span><span></span></div></button>
                         </div>
                     </div>
 
@@ -95,22 +95,28 @@
                         <div class="faq__items">
                             <div class="faq__tab">
                                 <div class="tab__item">
-1
+                                    <span class="title tab-title">Я вывел вещь, в стиме она стоит дешевле!</span>
+                                    <span class="text tab-text">Если Вы вывели предмет обменом в стим, и его цена в стиме ниже на 20%, чем цена на сайте, тогда смело пишите в поддержку через виджет на сайте. Мы начислим Вам разницу на баланс на сайте!</span>
+                                    <span class="text tab-text">Если предмет был выведен балансом на стим, и Вам не хватает на его покупку на площадке стим, тогда тоже смело можете писать в поддержку, мы компенсируем. Внимание, компенсация полагается если разница в цене от 10 рублей.</span>
                                 </div>
                             </div>
                             <div class="faq__tab">
                                 <div class="tab__item">
-2
+                                    <span class="title tab-title">Почему мои вещи проданы, хотя я их не продавал?</span>
+                                    <span class="text tab-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, recusandae ipsa. Doloribus tenetur ducimus ipsum exercitationem nostrum minus iste adipisci corporis asperiores qui! Delectus id, provident praesentium magni odio soluta?</span>
                                 </div>
                             </div>
                             <div class="faq__tab">
                                 <div class="tab__item">
-3
+                                    <span class="title tab-title">Как купить выгодное предложение?</span>
+                                    <span class="text tab-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, itaque minima doloribus id fugit qui at eligendi repellendus reprehenderit vel blanditiis laborum rem ut deleniti neque tempora veniam sint illum!
+                                    Adipisci veritatis consequatur, quia aspernatur ipsum dolorum fuga fugit nisi. Ad, vero. Adipisci at obcaecati saepe recusandae nihil maiores ipsum est. Esse aliquid officia vitae, placeat nostrum minus obcaecati deleniti.</span>
                                 </div>
                             </div>
                             <div class="faq__tab">
                                 <div class="tab__item">
-4
+                                    <span class="title tab-title">Я не нашел интересующего меня вопроса</span>
+                                    <span class="text tab-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, recusandae ipsa. Doloribus tenetur ducimus ipsum exercitationem nostrum minus iste adipisci corporis asperiores qui! Delectus id, provident praesentium magni odio soluta?</span>
                                 </div>
                             </div>
                         </div>
@@ -119,12 +125,58 @@
             </div>
             
 </div>
-</div>
 
-<div class="footer">
-    <div class="footer-wrapper">
 
-    </div>
+            <div class="content">
+                <div class="content__wrapper">
+                    <div class="content__cta">
+                        <button class="content__button button"><span class="text button__text">Перейти к продаже <div class="right"></div></span></button>
+                    </div>
+                </div>
+                
+            </div>
+
+            </div>
+
+            <div class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-row">
+                <div class="footer__item">
+                    <div class="footer__logo"><img src="icons/logo.svg"></div> 
+                    <div class="copyright"><span class="text text-copyright">Copyright Lorem ipsum dolor sit amet consectetur adipisicing elit</span></div>
+                    <div class="social__button">
+                        <a href="#" class="social__item"><img src="icons/face.png"></a>
+                        <a href="#" class="social__item"><img src="icons/inst.png"></a>
+                        <a href="#" class="social__item"><img src="icons/you.png"></a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link links">Как это работает</a>
+                        <a href="#" class="footer__link links">Бонус</a>
+                        <a href="#" class="footer__link links">FAQ</a>
+                        <a href="#" class="footer__link links">Связь с нами</a>
+                        <a href="#" class="footer__link links">Блог</a>
+                    </nav>
+                </div>
+                <div class="footer__item">
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link links">Giveaway</a>
+                        <a href="#" class="footer__link links">Партнерская программа</a>
+                        <a href="#" class="footer__link links">Мгновенные выплаты</a>
+                        <a href="#" class="footer__link links">На 100% безопасно</a>
+                        <a href="#" class="footer__link links">Без скрытых комиссий</a>
+                    </nav>
+                </div>
+                <div class="footer__item">
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link links">One Pager</a>
+                        <a href="#" class="footer__link links">Условия использования</a>
+                        <a href="#" class="footer__link links">Политика конфиденциальности</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
 </div>
 </div>
 <script src="js/main.js"></script>

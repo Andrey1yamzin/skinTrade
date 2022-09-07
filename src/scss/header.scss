@@ -21,7 +21,7 @@
     &__items{
         display: flex;
         align-items: center;
-        padding: 15px 0 0 0;
+        padding: 15px 0 15px 0;
     }
     &__links{
         display: flex;
@@ -30,13 +30,7 @@
         
     }
     &__link{
-        color:#9398B2;
-        text-decoration: none;
-        margin: 0 15px;
-        transition: all 0.3s ease;
-        &:hover{
-            color: #bfc6e7;
-        }
+       
     }
 }
 

@@ -2,9 +2,54 @@
     min-height: 320px;
     background: #080C13;
     flex: 0 0 auto;
+    font-family: 'Roboto', sans-serif;
     &-wrapper{
         max-width: 1280px;
         margin: 0 auto;
         padding: 0 30px;
+        height: 100%;
+    }
+    &-row{
+        display: flex;
+        height: 100%;
+        padding: 50px 0;
+        .footer__item{
+            height: 100%;
+            display:flex;
+            flex-direction: column;
+            width: 300px;
+            .footer__logo{
+                margin: 0px 0 24px 0;
+            }
+            .copyright{
+                margin: 0 0 63px 0;
+                .text-copyright{
+                    color: #1B2335;
+                }
+               
+            }
+            .social__button{
+                display: flex;
+                a{
+                    margin: 0 10px;
+                }
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+                
+            }
+            .footer__links{
+                display: flex;
+                flex-direction: column;
+                font-size: 14px;
+                margin: 0 0 0 100px;
+                
+            }
+            .footer__link{
+                display: inline-block;
+                margin: 0 0 24px 0;
+            }
+        }
     }
 }
