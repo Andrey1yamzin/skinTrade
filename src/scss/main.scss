@@ -21,7 +21,7 @@
         }
         .main__image{
             position: absolute;
-            width: 830px;
+            min-width: 830px;
             top: -200px;
             left: -130px;
             z-index: 1;

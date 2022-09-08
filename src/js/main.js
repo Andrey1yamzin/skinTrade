@@ -4,9 +4,23 @@ window.addEventListener('DOMContentLoaded', function(){
     let wrapBtn = document.querySelector('.faq__btns');
     let btn = document.querySelectorAll('.faq__btn');
     let tabs = document.querySelectorAll('.faq__tab');
+
+    let header = document.getElementById('header');
+    let burderMenu = document.querySelector('.header__openMenu');
+
     
-    
-    
+    function sizePade(){
+        if(document.documentElement.clientWidth <= 992){
+            header.classList.remove('header');
+            header.classList.add('header__burger');
+        }else if(document.documentElement.clientWidth > 992){
+            header.classList.remove('header__burger');
+            header.classList.add('header');
+           
+        }
+    }
+
+
     function hideTabContent(hide){
         for(let i = hide; i < tabs.length; i++){
             tabs[i].classList.remove('show');
@@ -39,4 +53,10 @@ window.addEventListener('DOMContentLoaded', function(){
                 }
             }
         })
+
+    burderMenu.addEventListener('click', function(){
+        header.classList.toggle('show_header');
+    });
+    window.addEventListener('resize', sizePade);
+    window.addEventListener('load', sizePade);
     });
