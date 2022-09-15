@@ -185,16 +185,19 @@
     padding: 30px 0 0 0;
     align-items: center;
 }
+.main__title-wrapper{
+}
+
 .main__image-wrapper{
     height: 100%;
+
+    overflow: hidden;
 }
 .main .main__item{
     position: relative;
-    overflow: hidden;
     
     .main__image{
         min-width: 600px;
-        // height: 100%;
     }
     img{
         position: absolute;
@@ -217,6 +220,9 @@
     padding: 0;
  
 }
+.faq .tabs__wrapper .faq__btns-wrapper .faq__btns .faq__btn .text{
+    padding: 0 5px;
+}
 .second .top{
 
 margin: 0 0 50px 0;
@@ -227,6 +233,7 @@ flex-wrap: wrap;
     .info__item{
         margin: 0 0 0px 0;
         .info-image{
+            padding:0 50px 0 10px;
             height: 100%;
         }
 
@@ -240,12 +247,30 @@ flex-wrap: wrap;
     }
 }
 
+.second .info-title{
+    width: 100%;
+    text-align: center;
+}
+.second .top .info__item .info-image{
+    padding: 0 20px 0 0px;
+}
+.second .top .info__text-wrapper{
+ margin: 0;
+ padding: 0 40px;
+}
+.second .info__row{
+    padding: 30px 0;
+}
+.second .down .info__text-wrapper{
+    padding: 0 40px;
+}
+.second .top .info-text{
+   
+}
 .second .down{
     flex-wrap: wrap;
     flex-direction: column-reverse;
-    .info__text-wrapper{
-        padding: 0 0 0 80px;
-    }
+    
     .info__item{
         .info-image{
             height: 100%;
@@ -261,11 +286,14 @@ flex-wrap: wrap;
 }
 
 .faq .tabs__wrapper{
-    margin: 100px 0 0 0;
+    margin: 50px 0 0 0;
+    align-content: stretch;
+    justify-content: flex-start;
 }
 
 .faq .tabs__wrapper .faq__btns-wrapper .faq__btns{
     margin: 0;
+    height: auto;
 }
 .faq .tabs__wrapper .faq__btns-wrapper .faq__btns .faq__btn{
     height: 100px;
@@ -275,10 +303,10 @@ flex-wrap: wrap;
 
 
 .main .main__item .title__main{
-    font-size: calc(16px + 24 * (100vw / 992));
-    line-height: 40px;
+    font-size: calc(16px + 24 * (50vw / 767));
+    line-height: 30px;
     width: 100%;
-    margin:0 0 30px 0;
+    margin:0 0 0px 0;
     padding: 0 0px 0 0;
             
 }
@@ -311,7 +339,42 @@ flex-wrap: wrap;
 }
 
 @media (max-width: 480px){
-
+    .header__burger{
+        width: 300px;
+    }
+    .header__openMenu{
+        padding: 30px  0 0 10px;
+    }
+    .second .info-title{
+        width: 100%;
+        text-align: center;
+    }
+    .second .top .info__item .info-image{
+        padding: 0 20px 0 0px;
+    }
+    .second .top .info__text-wrapper{
+     margin: 0;
+     padding: 0 40px;
+    }
+    .second .info__row{
+        padding: 30px 0;
+    }
+    .second .down .info__text-wrapper{
+        padding: 0 40px;
+    }
+    .second .top .info-text{
+       
+    }
+    .faq .tabs__wrapper .faq__btns-wrapper .faq__btns .faq__btn{
+        width: 50%;
+        height: 120px;
+    }
+    .faq .tabs__wrapper{
+        height: auto;
+    }
+    .faq .tabs__wrapper .faq__btns-wrapper .faq__btns{
+        flex-wrap: wrap;
+    }
 }
 
 // адаптивный шрифт
